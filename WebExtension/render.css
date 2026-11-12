@@ -1,0 +1,166 @@
+/* Page chrome around the rendered Markdown. Typography comes from
+   vendor/github-markdown.css, which follows the system light/dark setting. */
+
+html {
+    color-scheme: light dark;
+}
+
+body.mdv-body {
+    margin: 0;
+    background-color: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+    body.mdv-body {
+        background-color: #0d1117;
+    }
+}
+
+.mdv-article {
+    box-sizing: border-box;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 48px 45px 64px;
+}
+
+@media (max-width: 767px) {
+    .mdv-article {
+        padding: 56px 16px 32px;
+    }
+}
+
+/* Raw/Rendered toggle */
+
+.mdv-toolbar {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    z-index: 2147483647;
+}
+
+.mdv-toolbar button {
+    appearance: none;
+    padding: 5px 12px;
+    border: 1px solid rgba(31, 35, 40, 0.15);
+    border-radius: 6px;
+    background: rgba(246, 248, 250, 0.9);
+    color: #1f2328;
+    font: 500 12px/20px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    cursor: pointer;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
+
+.mdv-toolbar button:hover {
+    background: rgba(234, 238, 242, 0.95);
+}
+
+.mdv-toolbar button:focus-visible {
+    outline: 2px solid #0969da;
+    outline-offset: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .mdv-toolbar button {
+        border-color: rgba(240, 246, 252, 0.15);
+        background: rgba(33, 38, 45, 0.9);
+        color: #e6edf3;
+    }
+
+    .mdv-toolbar button:hover {
+        background: rgba(48, 54, 61, 0.95);
+    }
+
+    .mdv-toolbar button:focus-visible {
+        outline-color: #4493f8;
+    }
+}
+
+/* Switching between rendered and raw views */
+
+body.mdv-body:not(.mdv-show-raw) > pre.mdv-raw {
+    display: none;
+}
+
+body.mdv-show-raw > .mdv-article {
+    display: none;
+}
+
+body.mdv-body > pre.mdv-raw {
+    margin: 0;
+    padding: 48px 45px 64px;
+    font: 13px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 767px) {
+    body.mdv-body > pre.mdv-raw {
+        padding: 56px 16px 32px;
+    }
+}
+
+/* Heading anchors, shown on hover like GitHub */
+
+.markdown-body :is(h1, h2, h3, h4, h5, h6):has(> .mdv-anchor) {
+    position: relative;
+}
+
+.markdown-body .mdv-anchor {
+    position: absolute;
+    left: -20px;
+    width: 20px;
+    color: inherit;
+    font-weight: 400;
+    text-decoration: none;
+    opacity: 0;
+}
+
+.markdown-body h1:hover .mdv-anchor,
+.markdown-body h2:hover .mdv-anchor,
+.markdown-body h3:hover .mdv-anchor,
+.markdown-body h4:hover .mdv-anchor,
+.markdown-body h5:hover .mdv-anchor,
+.markdown-body h6:hover .mdv-anchor,
+.markdown-body .mdv-anchor:focus {
+    opacity: 0.5;
+}
+
+/* GFM task lists: drop the bullet when the item starts with a checkbox */
+
+.markdown-body li:has(> input[type="checkbox"]:first-child),
+.markdown-body li:has(> p:first-child > input[type="checkbox"]:first-child) {
+    list-style: none;
+}
+
+.markdown-body li > input[type="checkbox"]:first-child,
+.markdown-body li > p:first-child > input[type="checkbox"]:first-child {
+    margin: 0 0.3em 0.25em -1.4em;
+    vertical-align: middle;
+}
+
+/* Front matter block */
+
+.markdown-body .mdv-front-matter {
+    margin-bottom: 16px;
+}
+
+.markdown-body .mdv-front-matter summary {
+    color: var(--fgColor-muted, #59636e);
+    font-size: 85%;
+    cursor: pointer;
+}
+
+.markdown-body .mdv-front-matter pre {
+    margin-top: 8px;
+}
+
+@media print {
+    .mdv-toolbar {
+        display: none;
+    }
+
+    body.mdv-body {
+        background-color: transparent;
+    }
+}

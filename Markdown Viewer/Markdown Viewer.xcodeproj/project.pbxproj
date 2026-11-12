@@ -1,0 +1,1001 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8EC1FF1830A6175A00E893EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC1FF1730A6175A00E893EC /* AppDelegate.swift */; };
+		8EC1FF1A30A6175A00E893EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC1FF1930A6175A00E893EC /* SceneDelegate.swift */; };
+		8EC1FF1D30A6175A00E893EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EC1FF1B30A6175A00E893EC /* LaunchScreen.storyboard */; };
+		8EC1FF2030A6175A00E893EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EC1FF1E30A6175A00E893EC /* Main.storyboard */; };
+		8EC1FF2930A6175A00E893EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC1FF2830A6175A00E893EC /* AppDelegate.swift */; };
+		8EC1FF2C30A6175A00E893EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EC1FF2A30A6175A00E893EC /* Main.storyboard */; };
+		8EC1FF3330A6175A00E893EC /* Markdown Viewer Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8EC1FF3230A6175A00E893EC /* Markdown Viewer Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8EC1FF3D30A6175A00E893EC /* Markdown Viewer Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8EC1FF3C30A6175A00E893EC /* Markdown Viewer Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8EC1FF4230A6175A00E893EC /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 8EC1FF0730A6175900E893EC /* Main.html */; };
+		8EC1FF4330A6175A00E893EC /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 8EC1FF0730A6175900E893EC /* Main.html */; };
+		8EC1FF4430A6175A00E893EC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EC1FF0930A6175900E893EC /* Icon.png */; };
+		8EC1FF4530A6175A00E893EC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EC1FF0930A6175900E893EC /* Icon.png */; };
+		8EC1FF4630A6175A00E893EC /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 8EC1FF0A30A6175900E893EC /* Style.css */; };
+		8EC1FF4730A6175A00E893EC /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 8EC1FF0A30A6175900E893EC /* Style.css */; };
+		8EC1FF4830A6175A00E893EC /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 8EC1FF0B30A6175900E893EC /* Script.js */; };
+		8EC1FF4930A6175A00E893EC /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 8EC1FF0B30A6175900E893EC /* Script.js */; };
+		8EC1FF4A30A6175A00E893EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC1FF0C30A6175900E893EC /* ViewController.swift */; };
+		8EC1FF4B30A6175A00E893EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC1FF0C30A6175900E893EC /* ViewController.swift */; };
+		8EC1FF4C30A6175A00E893EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC1FF0D30A6175A00E893EC /* Assets.xcassets */; };
+		8EC1FF4D30A6175A00E893EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC1FF0D30A6175A00E893EC /* Assets.xcassets */; };
+		8EC1FF4E30A6175A00E893EC /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC1FF0F30A6175A00E893EC /* SafariWebExtensionHandler.swift */; };
+		8EC1FF4F30A6175A00E893EC /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC1FF0F30A6175A00E893EC /* SafariWebExtensionHandler.swift */; };
+		8EC1FF6830A6175A00E893EC /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 8EC1FF6130A6175A00E893EC /* background.js */; };
+		8EC1FF6930A6175A00E893EC /* images in Resources */ = {isa = PBXBuildFile; fileRef = 8EC1FF6230A6175A00E893EC /* images */; };
+		8EC1FF6A30A6175A00E893EC /* render.js in Resources */ = {isa = PBXBuildFile; fileRef = 8EC1FF6330A6175A00E893EC /* render.js */; };
+		8EC1FF6B30A6175A00E893EC /* render.css in Resources */ = {isa = PBXBuildFile; fileRef = 8EC1FF6430A6175A00E893EC /* render.css */; };
+		8EC1FF6C30A6175A00E893EC /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 8EC1FF6530A6175A00E893EC /* manifest.json */; };
+		8EC1FF6D30A6175A00E893EC /* detect.js in Resources */ = {isa = PBXBuildFile; fileRef = 8EC1FF6630A6175A00E893EC /* detect.js */; };
+		8EC1FF6E30A6175A00E893EC /* vendor in Resources */ = {isa = PBXBuildFile; fileRef = 8EC1FF6730A6175A00E893EC /* vendor */; };
+		8EC1FF6F30A6175A00E893EC /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 8EC1FF6130A6175A00E893EC /* background.js */; };
+		8EC1FF7030A6175A00E893EC /* images in Resources */ = {isa = PBXBuildFile; fileRef = 8EC1FF6230A6175A00E893EC /* images */; };
+		8EC1FF7130A6175A00E893EC /* render.js in Resources */ = {isa = PBXBuildFile; fileRef = 8EC1FF6330A6175A00E893EC /* render.js */; };
+		8EC1FF7230A6175A00E893EC /* render.css in Resources */ = {isa = PBXBuildFile; fileRef = 8EC1FF6430A6175A00E893EC /* render.css */; };
+		8EC1FF7330A6175A00E893EC /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 8EC1FF6530A6175A00E893EC /* manifest.json */; };
+		8EC1FF7430A6175A00E893EC /* detect.js in Resources */ = {isa = PBXBuildFile; fileRef = 8EC1FF6630A6175A00E893EC /* detect.js */; };
+		8EC1FF7530A6175A00E893EC /* vendor in Resources */ = {isa = PBXBuildFile; fileRef = 8EC1FF6730A6175A00E893EC /* vendor */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8EC1FF3430A6175A00E893EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EC1FF0130A6175900E893EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EC1FF3130A6175A00E893EC;
+			remoteInfo = "Markdown Viewer Extension (iOS)";
+		};
+		8EC1FF3E30A6175A00E893EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EC1FF0130A6175900E893EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EC1FF3B30A6175A00E893EC;
+			remoteInfo = "Markdown Viewer Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8EC1FF5530A6175A00E893EC /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8EC1FF3330A6175A00E893EC /* Markdown Viewer Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EC1FF5C30A6175A00E893EC /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8EC1FF3D30A6175A00E893EC /* Markdown Viewer Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8EC1FF0830A6175900E893EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		8EC1FF0930A6175900E893EC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		8EC1FF0A30A6175900E893EC /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		8EC1FF0B30A6175900E893EC /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		8EC1FF0C30A6175900E893EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8EC1FF0D30A6175A00E893EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8EC1FF0F30A6175A00E893EC /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		8EC1FF1430A6175A00E893EC /* Markdown Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Markdown Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EC1FF1730A6175A00E893EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8EC1FF1930A6175A00E893EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8EC1FF1C30A6175A00E893EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8EC1FF1F30A6175A00E893EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8EC1FF2130A6175A00E893EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EC1FF2630A6175A00E893EC /* Markdown Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Markdown Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EC1FF2830A6175A00E893EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8EC1FF2B30A6175A00E893EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8EC1FF2D30A6175A00E893EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EC1FF3230A6175A00E893EC /* Markdown Viewer Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Markdown Viewer Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EC1FF3730A6175A00E893EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EC1FF3C30A6175A00E893EC /* Markdown Viewer Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Markdown Viewer Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EC1FF4130A6175A00E893EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EC1FF6130A6175A00E893EC /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = ../../WebExtension/background.js; sourceTree = "<group>"; };
+		8EC1FF6230A6175A00E893EC /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = ../../WebExtension/images; sourceTree = "<group>"; };
+		8EC1FF6330A6175A00E893EC /* render.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = render.js; path = ../../WebExtension/render.js; sourceTree = "<group>"; };
+		8EC1FF6430A6175A00E893EC /* render.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = render.css; path = ../../WebExtension/render.css; sourceTree = "<group>"; };
+		8EC1FF6530A6175A00E893EC /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../WebExtension/manifest.json; sourceTree = "<group>"; };
+		8EC1FF6630A6175A00E893EC /* detect.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = detect.js; path = ../../WebExtension/detect.js; sourceTree = "<group>"; };
+		8EC1FF6730A6175A00E893EC /* vendor */ = {isa = PBXFileReference; lastKnownFileType = folder; name = vendor; path = ../../WebExtension/vendor; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8EC1FF1130A6175A00E893EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EC1FF2330A6175A00E893EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EC1FF2F30A6175A00E893EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EC1FF3930A6175A00E893EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8EC1FF0030A6175900E893EC = {
+			isa = PBXGroup;
+			children = (
+				8EC1FF0530A6175900E893EC /* Shared (App) */,
+				8EC1FF0E30A6175A00E893EC /* Shared (Extension) */,
+				8EC1FF1630A6175A00E893EC /* iOS (App) */,
+				8EC1FF2730A6175A00E893EC /* macOS (App) */,
+				8EC1FF3630A6175A00E893EC /* iOS (Extension) */,
+				8EC1FF4030A6175A00E893EC /* macOS (Extension) */,
+				8EC1FF1530A6175A00E893EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8EC1FF0530A6175900E893EC /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				8EC1FF0C30A6175900E893EC /* ViewController.swift */,
+				8EC1FF0D30A6175A00E893EC /* Assets.xcassets */,
+				8EC1FF0630A6175900E893EC /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		8EC1FF0630A6175900E893EC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8EC1FF0730A6175900E893EC /* Main.html */,
+				8EC1FF0930A6175900E893EC /* Icon.png */,
+				8EC1FF0A30A6175900E893EC /* Style.css */,
+				8EC1FF0B30A6175900E893EC /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8EC1FF0E30A6175A00E893EC /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				8EC1FF6030A6175A00E893EC /* Resources */,
+				8EC1FF0F30A6175A00E893EC /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		8EC1FF1530A6175A00E893EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8EC1FF1430A6175A00E893EC /* Markdown Viewer.app */,
+				8EC1FF2630A6175A00E893EC /* Markdown Viewer.app */,
+				8EC1FF3230A6175A00E893EC /* Markdown Viewer Extension.appex */,
+				8EC1FF3C30A6175A00E893EC /* Markdown Viewer Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8EC1FF1630A6175A00E893EC /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				8EC1FF1730A6175A00E893EC /* AppDelegate.swift */,
+				8EC1FF1930A6175A00E893EC /* SceneDelegate.swift */,
+				8EC1FF1B30A6175A00E893EC /* LaunchScreen.storyboard */,
+				8EC1FF1E30A6175A00E893EC /* Main.storyboard */,
+				8EC1FF2130A6175A00E893EC /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		8EC1FF2730A6175A00E893EC /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				8EC1FF2830A6175A00E893EC /* AppDelegate.swift */,
+				8EC1FF2A30A6175A00E893EC /* Main.storyboard */,
+				8EC1FF2D30A6175A00E893EC /* Info.plist */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		8EC1FF3630A6175A00E893EC /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				8EC1FF3730A6175A00E893EC /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		8EC1FF4030A6175A00E893EC /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				8EC1FF4130A6175A00E893EC /* Info.plist */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		8EC1FF6030A6175A00E893EC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8EC1FF6130A6175A00E893EC /* background.js */,
+				8EC1FF6230A6175A00E893EC /* images */,
+				8EC1FF6330A6175A00E893EC /* render.js */,
+				8EC1FF6430A6175A00E893EC /* render.css */,
+				8EC1FF6530A6175A00E893EC /* manifest.json */,
+				8EC1FF6630A6175A00E893EC /* detect.js */,
+				8EC1FF6730A6175A00E893EC /* vendor */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8EC1FF1330A6175A00E893EC /* Markdown Viewer (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EC1FF5630A6175A00E893EC /* Build configuration list for PBXNativeTarget "Markdown Viewer (iOS)" */;
+			buildPhases = (
+				8EC1FF1030A6175A00E893EC /* Sources */,
+				8EC1FF1130A6175A00E893EC /* Frameworks */,
+				8EC1FF1230A6175A00E893EC /* Resources */,
+				8EC1FF5530A6175A00E893EC /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EC1FF3530A6175A00E893EC /* PBXTargetDependency */,
+			);
+			name = "Markdown Viewer (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "Markdown Viewer (iOS)";
+			productReference = 8EC1FF1430A6175A00E893EC /* Markdown Viewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8EC1FF2530A6175A00E893EC /* Markdown Viewer (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EC1FF5D30A6175A00E893EC /* Build configuration list for PBXNativeTarget "Markdown Viewer (macOS)" */;
+			buildPhases = (
+				8EC1FF2230A6175A00E893EC /* Sources */,
+				8EC1FF2330A6175A00E893EC /* Frameworks */,
+				8EC1FF2430A6175A00E893EC /* Resources */,
+				8EC1FF5C30A6175A00E893EC /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EC1FF3F30A6175A00E893EC /* PBXTargetDependency */,
+			);
+			name = "Markdown Viewer (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "Markdown Viewer (macOS)";
+			productReference = 8EC1FF2630A6175A00E893EC /* Markdown Viewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8EC1FF3130A6175A00E893EC /* Markdown Viewer Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EC1FF5230A6175A00E893EC /* Build configuration list for PBXNativeTarget "Markdown Viewer Extension (iOS)" */;
+			buildPhases = (
+				8EC1FF2E30A6175A00E893EC /* Sources */,
+				8EC1FF2F30A6175A00E893EC /* Frameworks */,
+				8EC1FF3030A6175A00E893EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Markdown Viewer Extension (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "Markdown Viewer Extension (iOS)";
+			productReference = 8EC1FF3230A6175A00E893EC /* Markdown Viewer Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		8EC1FF3B30A6175A00E893EC /* Markdown Viewer Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EC1FF5930A6175A00E893EC /* Build configuration list for PBXNativeTarget "Markdown Viewer Extension (macOS)" */;
+			buildPhases = (
+				8EC1FF3830A6175A00E893EC /* Sources */,
+				8EC1FF3930A6175A00E893EC /* Frameworks */,
+				8EC1FF3A30A6175A00E893EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Markdown Viewer Extension (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "Markdown Viewer Extension (macOS)";
+			productReference = 8EC1FF3C30A6175A00E893EC /* Markdown Viewer Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8EC1FF0130A6175900E893EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					8EC1FF1330A6175A00E893EC = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					8EC1FF2530A6175A00E893EC = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					8EC1FF3130A6175A00E893EC = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					8EC1FF3B30A6175A00E893EC = {
+						CreatedOnToolsVersion = 26.6;
+					};
+				};
+			};
+			buildConfigurationList = 8EC1FF0430A6175900E893EC /* Build configuration list for PBXProject "Markdown Viewer" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8EC1FF0030A6175900E893EC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8EC1FF1530A6175A00E893EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8EC1FF1330A6175A00E893EC /* Markdown Viewer (iOS) */,
+				8EC1FF2530A6175A00E893EC /* Markdown Viewer (macOS) */,
+				8EC1FF3130A6175A00E893EC /* Markdown Viewer Extension (iOS) */,
+				8EC1FF3B30A6175A00E893EC /* Markdown Viewer Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8EC1FF1230A6175A00E893EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EC1FF4430A6175A00E893EC /* Icon.png in Resources */,
+				8EC1FF1D30A6175A00E893EC /* LaunchScreen.storyboard in Resources */,
+				8EC1FF4230A6175A00E893EC /* Main.html in Resources */,
+				8EC1FF4830A6175A00E893EC /* Script.js in Resources */,
+				8EC1FF4C30A6175A00E893EC /* Assets.xcassets in Resources */,
+				8EC1FF2030A6175A00E893EC /* Main.storyboard in Resources */,
+				8EC1FF4630A6175A00E893EC /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EC1FF2430A6175A00E893EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EC1FF4530A6175A00E893EC /* Icon.png in Resources */,
+				8EC1FF4730A6175A00E893EC /* Style.css in Resources */,
+				8EC1FF2C30A6175A00E893EC /* Main.storyboard in Resources */,
+				8EC1FF4930A6175A00E893EC /* Script.js in Resources */,
+				8EC1FF4D30A6175A00E893EC /* Assets.xcassets in Resources */,
+				8EC1FF4330A6175A00E893EC /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EC1FF3030A6175A00E893EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EC1FF7030A6175A00E893EC /* images in Resources */,
+				8EC1FF7530A6175A00E893EC /* vendor in Resources */,
+				8EC1FF7430A6175A00E893EC /* detect.js in Resources */,
+				8EC1FF7230A6175A00E893EC /* render.css in Resources */,
+				8EC1FF7330A6175A00E893EC /* manifest.json in Resources */,
+				8EC1FF7130A6175A00E893EC /* render.js in Resources */,
+				8EC1FF6F30A6175A00E893EC /* background.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EC1FF3A30A6175A00E893EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EC1FF6930A6175A00E893EC /* images in Resources */,
+				8EC1FF6E30A6175A00E893EC /* vendor in Resources */,
+				8EC1FF6D30A6175A00E893EC /* detect.js in Resources */,
+				8EC1FF6B30A6175A00E893EC /* render.css in Resources */,
+				8EC1FF6C30A6175A00E893EC /* manifest.json in Resources */,
+				8EC1FF6A30A6175A00E893EC /* render.js in Resources */,
+				8EC1FF6830A6175A00E893EC /* background.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8EC1FF1030A6175A00E893EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EC1FF4A30A6175A00E893EC /* ViewController.swift in Sources */,
+				8EC1FF1830A6175A00E893EC /* AppDelegate.swift in Sources */,
+				8EC1FF1A30A6175A00E893EC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EC1FF2230A6175A00E893EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EC1FF4B30A6175A00E893EC /* ViewController.swift in Sources */,
+				8EC1FF2930A6175A00E893EC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EC1FF2E30A6175A00E893EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EC1FF4E30A6175A00E893EC /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EC1FF3830A6175A00E893EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EC1FF4F30A6175A00E893EC /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8EC1FF3530A6175A00E893EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EC1FF3130A6175A00E893EC /* Markdown Viewer Extension (iOS) */;
+			targetProxy = 8EC1FF3430A6175A00E893EC /* PBXContainerItemProxy */;
+		};
+		8EC1FF3F30A6175A00E893EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EC1FF3B30A6175A00E893EC /* Markdown Viewer Extension (macOS) */;
+			targetProxy = 8EC1FF3E30A6175A00E893EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8EC1FF0730A6175900E893EC /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EC1FF0830A6175900E893EC /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		8EC1FF1B30A6175A00E893EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EC1FF1C30A6175A00E893EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8EC1FF1E30A6175A00E893EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EC1FF1F30A6175A00E893EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8EC1FF2A30A6175A00E893EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EC1FF2B30A6175A00E893EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8EC1FF5030A6175A00E893EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8EC1FF5130A6175A00E893EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		8EC1FF5330A6175A00E893EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Markdown Viewer Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.port21.MarkdownViewer.Extension;
+				PRODUCT_NAME = "Markdown Viewer Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8EC1FF5430A6175A00E893EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Markdown Viewer Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.port21.MarkdownViewer.Extension;
+				PRODUCT_NAME = "Markdown Viewer Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8EC1FF5730A6175A00E893EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B22K597J7Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Markdown Viewer";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.port21.MarkdownViewer;
+				PRODUCT_NAME = "Markdown Viewer";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8EC1FF5830A6175A00E893EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B22K597J7Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Markdown Viewer";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.port21.MarkdownViewer;
+				PRODUCT_NAME = "Markdown Viewer";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8EC1FF5A30A6175A00E893EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Markdown Viewer Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.port21.MarkdownViewer.Extension;
+				PRODUCT_NAME = "Markdown Viewer Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8EC1FF5B30A6175A00E893EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Markdown Viewer Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.port21.MarkdownViewer.Extension;
+				PRODUCT_NAME = "Markdown Viewer Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8EC1FF5E30A6175A00E893EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Markdown Viewer";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.port21.MarkdownViewer;
+				PRODUCT_NAME = "Markdown Viewer";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8EC1FF5F30A6175A00E893EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Markdown Viewer";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.port21.MarkdownViewer;
+				PRODUCT_NAME = "Markdown Viewer";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8EC1FF0430A6175900E893EC /* Build configuration list for PBXProject "Markdown Viewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EC1FF5030A6175A00E893EC /* Debug */,
+				8EC1FF5130A6175A00E893EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EC1FF5230A6175A00E893EC /* Build configuration list for PBXNativeTarget "Markdown Viewer Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EC1FF5330A6175A00E893EC /* Debug */,
+				8EC1FF5430A6175A00E893EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EC1FF5630A6175A00E893EC /* Build configuration list for PBXNativeTarget "Markdown Viewer (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EC1FF5730A6175A00E893EC /* Debug */,
+				8EC1FF5830A6175A00E893EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EC1FF5930A6175A00E893EC /* Build configuration list for PBXNativeTarget "Markdown Viewer Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EC1FF5A30A6175A00E893EC /* Debug */,
+				8EC1FF5B30A6175A00E893EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EC1FF5D30A6175A00E893EC /* Build configuration list for PBXNativeTarget "Markdown Viewer (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EC1FF5E30A6175A00E893EC /* Debug */,
+				8EC1FF5F30A6175A00E893EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8EC1FF0130A6175900E893EC /* Project object */;
+}
