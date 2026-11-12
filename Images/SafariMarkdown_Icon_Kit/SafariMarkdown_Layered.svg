@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="1024" height="1024" viewBox="0 0 1254 1254" role="img" aria-labelledby="title description">
+  <title id="title">SafariMarkdown app icon</title>
+  <desc id="description">A blue Markdown source card behind a light rendered page with a coral folded corner.</desc>
+  <defs>
+    <linearGradient id="background" x1="0%" y1="0%" x2="100%" y2="94%" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0343df"/>
+      <stop offset=".47" stop-color="#071c80"/>
+      <stop offset="1" stop-color="#030a31"/>
+    </linearGradient>
+    <radialGradient id="background-light" cx="0%" cy="8%" r="75%">
+      <stop offset="0" stop-color="#1955ff" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#1955ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rear-edge" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0" stop-color="#c4fbff"/>
+      <stop offset=".25" stop-color="#2cf3ff"/>
+      <stop offset=".66" stop-color="#0682fa"/>
+      <stop offset="1" stop-color="#412dd1"/>
+    </linearGradient>
+    <linearGradient id="rear-face" x1="30%" x2="68%" y1="0%" y2="100%">
+      <stop offset="0" stop-color="#0066ea"/>
+      <stop offset=".28" stop-color="#043ab1"/>
+      <stop offset=".64" stop-color="#0c267c"/>
+      <stop offset="1" stop-color="#351de6"/>
+    </linearGradient>
+    <radialGradient id="rear-side" cx="0%" cy="46%" r="65%">
+      <stop offset="0" stop-color="#0497ff" stop-opacity=".86"/>
+      <stop offset="1" stop-color="#0497ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glint" x1="0%" x2="60%" y1="0%" y2="100%">
+      <stop offset="0" stop-color="#ebffff" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#93eaff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="paper-edge" x1="18%" x2="83%" y1="0%" y2="100%">
+      <stop offset="0" stop-color="#f6ffff"/>
+      <stop offset=".53" stop-color="#9eeaff"/>
+      <stop offset="1" stop-color="#00d9f7"/>
+    </linearGradient>
+    <linearGradient id="paper-face" x1="45%" x2="55%" y1="0%" y2="100%">
+      <stop offset="0" stop-color="#d7eafa"/>
+      <stop offset=".42" stop-color="#e2f3fb"/>
+      <stop offset="1" stop-color="#71cef3"/>
+    </linearGradient>
+    <radialGradient id="paper-light" cx="0%" cy="12%" r="85%">
+      <stop offset="0" stop-color="#3cdbfc" stop-opacity=".67"/>
+      <stop offset="1" stop-color="#3cdbfc" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="coral" x1="0%" x2="100%" y1="100%" y2="0%">
+      <stop offset="0" stop-color="#ffd1ae"/>
+      <stop offset=".48" stop-color="#ff987e"/>
+      <stop offset="1" stop-color="#e96263"/>
+    </linearGradient>
+    <linearGradient id="heading" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0" stop-color="#0059ff"/>
+      <stop offset="1" stop-color="#0642e8"/>
+    </linearGradient>
+    <filter id="soft-shadow" x="-.25" y="-.25" width="1.5" height="1.6" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+    <filter id="fold-shadow" x="-.5" y="-.5" width="2" height="2">
+      <feGaussianBlur stdDeviation="13"/>
+    </filter>
+    <path id="rear-silhouette" d="M177 317C177 226 245 168 340 165L690 157C770 155 827 217 827 293V710C827 791 778 844 699 844H312C235 844 177 787 177 711Z"/>
+    <path id="rear-inset" d="M191 319C191 233 249 180 343 177L692 169C761 167 814 223 814 295V707C814 777 770 830 699 830H314C244 830 191 777 191 708Z"/>
+    <path id="paper-silhouette" d="M300 564C300 483 356 421 448 417L837 407C869 406 888 421 911 443L1006 535C1030 558 1040 579 1040 615V948C1040 1028 991 1086 906 1086H441C355 1086 300 1031 300 949Z"/>
+    <path id="paper-inset" d="M313 567C313 490 365 433 451 430L839 419C865 419 882 433 903 453L997 543C1019 565 1028 583 1028 616V945C1028 1020 983 1072 904 1072H442C362 1072 313 1023 313 946Z"/>
+    <path id="fold-shape" d="M850 408C872 409 890 423 913 445L1008 537C1021 550 1029 561 1034 574C1027 565 1016 563 1002 563L915 565C888 566 867 548 867 520L867 429C867 419 861 412 850 408Z"/>
+    <clipPath id="clip-paper"><use xlink:href="#paper-silhouette"/></clipPath>
+  </defs>
+  <g id="backdrop" inkscape:groupmode="layer" inkscape:label="01 · Blue background">
+    <rect width="1254" height="1254" fill="url(#background)"/>
+    <rect width="1254" height="1254" fill="url(#background-light)"/>
+  </g>
+  <g id="source-card" inkscape:groupmode="layer" inkscape:label="02 · Source card">
+    <use xlink:href="#rear-silhouette" transform="translate(0 22)" fill="#020626" opacity=".65" filter="url(#soft-shadow)"/>
+    <use xlink:href="#rear-silhouette" fill="url(#rear-edge)"/>
+    <use xlink:href="#rear-inset" fill="url(#rear-face)"/>
+    <use xlink:href="#rear-inset" fill="url(#rear-side)"/>
+    <path fill="url(#glint)" d="M206 322C206 246 259 190 349 186L670 178C603 193 499 194 365 210C279 220 244 268 226 331C219 353 206 345 206 322Z"/>
+  </g>
+  <g id="markdown-mark" inkscape:groupmode="layer" inkscape:label="03 · Markdown symbol" fill="#fcfdff">
+    <path d="M312 247H337Q343 247 347 251L399 301L449 248Q453 243 460 243H486Q498 243 498 254V378Q498 390 487 390H460Q450 390 450 379V316L407 360Q400 368 392 361L349 317V382Q349 393 338 393H312Q301 393 301 382V258Q301 247 312 247Z"/>
+    <path d="M572 239H593Q602 239 602 249V315H633Q647 315 640 326L588 384Q582 390 576 384L526 330Q518 319 529 317H563V249Q563 239 572 239Z"/>
+  </g>
+  <g id="rendered-page" inkscape:groupmode="layer" inkscape:label="04 · Rendered page">
+    <use xlink:href="#paper-silhouette" transform="translate(0 24)" fill="#020622" opacity=".7" filter="url(#soft-shadow)"/>
+    <use xlink:href="#paper-silhouette" fill="url(#paper-edge)"/>
+    <use xlink:href="#paper-inset" fill="url(#paper-face)"/>
+    <use xlink:href="#paper-inset" fill="url(#paper-light)"/>
+    <path fill="url(#glint)" d="M328 574C328 494 386 445 462 443L794 431C723 447 601 455 494 467C417 476 364 511 340 581C336 597 328 595 328 574Z"/>
+  </g>
+  <g id="page-fold" inkscape:groupmode="layer" inkscape:label="05 · Coral page fold">
+    <g clip-path="url(#clip-paper)">
+      <use xlink:href="#fold-shape" transform="translate(-6 17)" fill="#324378" opacity=".53" filter="url(#fold-shadow)"/>
+    </g>
+    <use xlink:href="#fold-shape" fill="url(#coral)" stroke="#ffa084" stroke-width="2"/>
+  </g>
+  <g id="page-type" inkscape:groupmode="layer" inkscape:label="06 · Heading and body lines">
+    <rect x="386" y="609" width="569" height="123" rx="44" fill="url(#heading)"/>
+    <rect x="387" y="788" width="510" height="55" rx="27.5" fill="#0a2868"/>
+    <rect x="387" y="882" width="430" height="55" rx="27.5" fill="#0a2868"/>
+  </g>
+</svg>
