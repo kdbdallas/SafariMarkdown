@@ -16,11 +16,15 @@ import SafariServices
 typealias PlatformViewController = NSViewController
 #endif
 
-let extensionBundleIdentifier = "com.dallasbrown.MarkdownViewer.Extension"
-
 class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMessageHandler {
 
     @IBOutlet var webView: WKWebView!
+
+#if os(macOS)
+    private var extensionBundleIdentifier: String? {
+        Bundle.main.bundleIdentifier.map { $0 + ".Extension" }
+    }
+#endif
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,20 +44,16 @@ class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMess
 #if os(iOS)
         webView.evaluateJavaScript("show('ios')")
 #elseif os(macOS)
-        webView.evaluateJavaScript("show('mac')")
+        let usesSettings = if #available(macOS 13, *) { true } else { false }
+        webView.evaluateJavaScript("show('mac', undefined, \(usesSettings))")
 
-        SFSafariExtensionManager.getStateOfSafariExtension(withIdentifier: extensionBundleIdentifier) { (state, error) in
-            guard let state = state, error == nil else {
-                // Insert code to inform the user that something went wrong.
-                return
-            }
+        guard let extensionBundleIdentifier else { return }
+
+        SFSafariExtensionManager.getStateOfSafariExtension(withIdentifier: extensionBundleIdentifier) { state, error in
+            guard let state, error == nil else { return }
 
             DispatchQueue.main.async {
-                if #available(macOS 13, *) {
-                    webView.evaluateJavaScript("show('mac', \(state.isEnabled), true)")
-                } else {
-                    webView.evaluateJavaScript("show('mac', \(state.isEnabled), false)")
-                }
+                webView.evaluateJavaScript("show('mac', \(state.isEnabled), \(usesSettings))")
             }
         }
 #endif
@@ -61,21 +61,33 @@ class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMess
 
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
 #if os(macOS)
-        if (message.body as! String != "open-preferences") {
+        guard message.body as? String == "open-preferences" else { return }
+        guard let extensionBundleIdentifier else {
+            showSafariSettingsError()
             return
         }
 
         SFSafariApplication.showPreferencesForExtension(withIdentifier: extensionBundleIdentifier) { error in
-            guard error == nil else {
-                // Insert code to inform the user that something went wrong.
-                return
-            }
-
             DispatchQueue.main.async {
+                guard error == nil else {
+                    self.showSafariSettingsError()
+                    return
+                }
+
                 NSApp.terminate(self)
             }
         }
 #endif
     }
+
+#if os(macOS)
+    private func showSafariSettingsError() {
+        let alert = NSAlert()
+        alert.messageText = "Couldn’t Open Safari Extensions"
+        alert.informativeText = "In Safari, choose Safari > Settings, then click Extensions to find Markdown Viewer."
+        alert.addButton(withTitle: "OK")
+        alert.runModal()
+    }
+#endif
 
 }
